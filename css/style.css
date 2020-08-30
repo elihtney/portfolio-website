@@ -1,29 +1,61 @@
+/*
+Colors ---------------
+Puke Green: #5e561d
+Dark Teal: #0c2b2d
+White: #ffffff
+Tan: #eae5da
+Gray: #cecece
+*/
+header {
+  background-color: #0c2b2d;
+  font-weight: 600;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #ffffff;
+}
+
 body {
   background-color: #ffffff;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #383838;
+}
+
+main {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+footer {
+  background-color: #eae5da;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
-  font-size: 2.75em;
-  font-weight: 700;
+  font-size: 2.25em;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 700;
+  font-size: 1.9em;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -34,47 +66,110 @@ img {
 }
 
 a {
-  color: #ff7f50;
-  text-decoration: none; /* No underlining */
+  color: #5e561d;
+  text-decoration: none;
+  /* No underlining */
 }
 
-a:visited { /* visited link */
-  color: #ff7f50;
+a:visited {
+  /* visited link */
+  color: #23200a;
 }
 
 a:hover, a:focus {
-  color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  color: #5e561d;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
 
-a:active { /* selected link */
-  color: #994c30;
+a:active {
+  /* selected link */
+  color: #5e561d;
 }
 
-.button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
+header a:link,
+header a:visited,
+header a:hover,
+header a:active,
+header a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button, .button:visited {
+  display: inline-block;
+  background-color: #5e561d;
+  color: #ffffff;
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 15px;
+  border-bottom: 4px solid #23200a;
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.9;
   text-decoration: none;
+}
+
+.button:active {
+  border-bottom: 4px solid #5e561d;
+  opacity: 1.0;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
+  color: #5e561d;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 2px solid #5e561d;
+  border-radius: 15px;
 }
 
 .button.contact:hover {
-  background-color: #ff7f50;
+  background-color: #5e561d;
   color: #ffffff;
+}
+
+.button.contact:active {
+  opacity: 1.0;
+}
+
+.button.download, .button.download:visited {
+  display: inline-block;
+  background-color: #5e561d;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+  border-bottom: 4px solid #23200a;
+  transition: 0.2s opacity;
+}
+
+.button.download:active {
+  border-bottom: 4px solid #5e561d;
+  opacity: 1.0;
+}
+
+#hero {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #eae5da;
+}
+
+#hero p {
+  font-size: 80%;
+  font-weight: 300;
+}
+
+#contact {
+  text-align: center;
+  align-items: center;
 }

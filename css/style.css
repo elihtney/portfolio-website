@@ -53,7 +53,7 @@ main {
 
 footer {
   background-color: #eae5da;
-    padding: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 h1, h2, h3, h4 {
@@ -107,7 +107,7 @@ a:active {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 200px;
 }
 
 .button, .button:visited {
@@ -126,9 +126,11 @@ a:active {
 .button:hover {
   opacity: 0.9;
   text-decoration: none;
+  transition: 0.04s border;
 }
 
 .button:active {
+  border-top: 4px solid #ffffff;
   border-bottom: 4px solid #5e561d;
   opacity: 1.0;
 }
@@ -142,14 +144,18 @@ a:active {
   padding-right: 30px;
   border: 2px solid #5e561d;
   border-radius: 15px;
+  transition: 1s color;
 }
 
 .button.contact:hover {
   background-color: #5e561d;
+  border: 2px solid #23200a;
   color: #ffffff;
+  transition: 1s border;
 }
 
 .button.contact:active {
+  border: 2px solid #ffffff;
   opacity: 1.0;
 }
 
@@ -166,13 +172,34 @@ a:active {
   transition: 0.2s opacity;
 }
 
+.button.download:hover {
+  opacity: 0.9;
+  text-decoration: none;
+  transition: 0.04s border;
+}
+
 .button.download:active {
+  border-top: 4px solid #ffffff;
   border-bottom: 4px solid #5e561d;
   opacity: 1.0;
 }
 
 .center-text {
   text-align: center;
+}
+
+.portrait {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+}
+
+.project-header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
 }
 
 nav > ul {
@@ -203,7 +230,7 @@ nav > ul > li > a {
 }
 
 #hero p {
-  font-size: 60%;
+  font-size: 50%;
   font-weight: 300;
 }
 
@@ -216,16 +243,22 @@ nav > ul > li > a {
   background-color: #ffffff;
 }
 
+
 #work h2 {
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   border-radius: 50px;
   background-color: #f2f2f2;
 }
 
-#work .row {
+
+#work .row,
+#work .row::after {
   padding-bottom: 30px;
   border-bottom: 2px solid #cecece;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #about .container {
@@ -241,16 +274,27 @@ nav > ul > li > a {
   padding: 10px;
   border-radius: 50px;
   background-color: #f2f2f2;
+  font-size: 1.65em;
 }
 
 #about h3 {
   text-align: center;
+  margin-top: 0;
+  font-size: 1.35em;
 }
 
 #about ul {
   list-style-type: none;
   text-align: center;
   padding: 0 10px;
+}
+
+#about .row,
+#about .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  width:100%;
 }
 
 #project h1 {
@@ -277,6 +321,23 @@ nav > ul > li > a {
   height: calc(100vw / (375 / 812));
 }
 
+.berlin-illustration {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -288,8 +349,41 @@ Medium devices (640px and larger)
 
   nav {
     width: auto;
-    float: right
+    float: right;
     margin-top: 4px;
+  }
+
+  main {
+    padding-top: 94px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .portrait {
+    max-width: 40%;
+  }
+
+  .project-header {
+    max-width: 50%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 20px;
   }
 
 }
@@ -298,6 +392,19 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
 }
 
 /* ==============================

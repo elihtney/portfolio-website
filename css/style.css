@@ -1,6 +1,6 @@
 /*
 Colors ---------------
-Puke Green: #5e561d
+Golden Green: #5e561d
 Dark Teal: #0c2b2d
 White: #ffffff
 Tan: #eae5da
@@ -12,15 +12,14 @@ Gray: #f2f2f2
 }
 
 .container {
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 header {
   background-color: #0c2b2d;
-  text-align: center;
   font-weight: 600;
   color: #ffffff;
-  padding: 20px 0px 1px 0px;
+  padding: 15px 0px 9px 0px;
   width: 100%;
   display: inline-block;
   position: fixed;
@@ -48,7 +47,7 @@ body {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 60px;
 }
 
 footer {
@@ -107,7 +106,7 @@ a:active {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 150px;
 }
 
 .button, .button:visited {
@@ -205,10 +204,7 @@ a:active {
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -217,6 +213,44 @@ nav > ul > li > a {
   font-weight: 600;
   color: #ffffff;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive li:not(:last-child) {
+  display: block;
+  padding: 3px;
+  text-align: center;
+  border-left: 2px solid #5e561d;
+  border-right: 2px solid #5e561d;
+}
+
+.navtoggle.responsive li:not(:last-child):active {
+  background-color: #415A5B;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+
 
 #hero {
   background-color: #eae5da;
@@ -361,12 +395,32 @@ Medium devices (640px and larger)
     font-size: 18px;
   }
 
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
   nav > ul > li > a {
     padding: 0 15px;
   }
 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   #hero span {
     display: block;
+  }
+
+  .logo {
+    max-width: 200px;
   }
 
   .portrait {

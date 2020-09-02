@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/4de4e9216c.js" crossorigin="anonymous"></script>
   <Title>Yen Le UX Homepage</title>
 </head>
 
@@ -16,16 +17,19 @@
 
     <!-- Navigation area starts here-->
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html"><img src="img/website_logo@2.png" class="logo" alt="Yen-Le-UX/UI-Logo"></a>
-
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
+
   </header>
 
   <main>

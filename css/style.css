@@ -448,14 +448,14 @@ Medium devices (640px and larger)
   }
 
   #project img {
-    width: 70%;
+    width: 75%;
+  }
+
+  #project ul > li {
+    max-width: 480px;
   }
 
   #project .prototype {
-    width: 40%;
-  }
-
-  #project .refinement {
     width: 50%;
   }
 
@@ -464,8 +464,12 @@ Medium devices (640px and larger)
     content: "";
     clear: both;
     display: table;
+    table-layout: fixed;
+    border-collapse: collapse;;
     width: 100%;
   }
+
+
 
   .logo {
     max-width: 200px;
@@ -496,14 +500,6 @@ Medium devices (640px and larger)
     height: 649px;
     margin: 30px auto;
   }
-}
-
-.container {
-  max-width: 950px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 }
 
 /* ==============================

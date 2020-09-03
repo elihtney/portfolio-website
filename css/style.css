@@ -2,7 +2,7 @@
 Colors ---------------
 Golden Green: #5e561d
 Dark Teal: #0c2b2d
-White: #ffffff
+White: #fff
 Tan: #eae5da
 Gray: #f2f2f2
 */
@@ -18,14 +18,14 @@ Gray: #f2f2f2
 header {
   background-color: #0c2b2d;
   font-weight: 600;
-  color: #ffffff;
-  padding: 15px 0px 9px 0px;
+  color: #fff;
+  padding: 15px 0 9px;
   width: 100%;
   display: inline-block;
   position: fixed;
-  -webkit-box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow:    0px 2px 10px 0px rgba(50, 50, 50, 0.5);
-  box-shadow:         0px 2px 10px 0px rgba(50, 50, 50, 0.5);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0 2px 10px 0 rgba(50, 50, 50, 0.5);
+  box-shadow: 0 2px 10px 0 rgba(50, 50, 50, 0.5);
 }
 
 header a:link,
@@ -33,12 +33,12 @@ header a:visited,
 header a:hover,
 header a:active,
 header a:focus {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Segoe UI', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -52,11 +52,14 @@ main {
 
 footer {
   background-color: #eae5da;
-  padding: 5px 0px 35px 0px;
+  padding: 5px 0 35px;
   font-size: 85%;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -86,8 +89,7 @@ img {
 
 a {
   color: #5e561d;
-  text-decoration: none;
-  /* No underlining */
+  text-decoration: none; /* No underlining */
 }
 
 a:visited {
@@ -95,10 +97,10 @@ a:visited {
   color: #23200a;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #5e561d;
-  text-decoration: underline;
-  /* Underlining when hovering over a link */
+  text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:active {
@@ -110,10 +112,11 @@ a:active {
   max-width: 150px;
 }
 
-.button, .button:visited {
+.button,
+.button:visited {
   display: inline-block;
   background-color: #474747;
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
   padding: 10px;
   padding-left: 30px;
@@ -130,9 +133,9 @@ a:active {
 }
 
 .button:active {
-  border-top: 4px solid #ffffff;
+  border-top: 4px solid #fff;
   border-bottom: 4px solid #474747;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .button.contact {
@@ -150,20 +153,21 @@ a:active {
 .button.contact:hover {
   background-color: #5e561d;
   border: 2px solid #23200a;
-  color: #ffffff;
+  color: #fff;
   transition: 1s border;
 }
 
 .button.contact:active {
-  border: 2px solid #ffffff;
-  opacity: 1.0;
+  border: 2px solid #fff;
+  opacity: 1;
 }
 
-.button.download, .button.download:visited {
+.button.download,
+.button.download:visited {
   display: inline-block;
   position: relative;
   background-color: #474747;
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
   padding: 10px;
   padding-left: 30px;
@@ -184,9 +188,9 @@ a:active {
 }
 
 .button.download:active {
-  border-top: 4px solid #ffffff;
+  border-top: 4px solid #fff;
   border-bottom: 4px solid #474747;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .center-text {
@@ -217,7 +221,7 @@ nav > ul > li > a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #ffffff;
+  color: #fff;
 }
 
 .navtoggle li:not(:last-child) {
@@ -233,18 +237,19 @@ nav > ul > li > a {
 }
 
 .navtoggle.responsive li:not(:last-child):active {
-  background-color: #415A5B;
+  background-color: #415a5b;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -264,9 +269,14 @@ nav > ul > li > a {
   color: #5e561d;
 }
 
+.img.center {
+  display:block;
+  margin: 0 auto;
+}
+
 #hero {
   background-color: #eae5da;
-  padding: 10px 0;
+  padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
@@ -276,7 +286,8 @@ nav > ul > li > a {
 }
 
 #hero p {
-  font-size: 50%;
+  text-align: center;
+  font-size: 1.1em;
   font-weight: 300;
 }
 
@@ -286,16 +297,14 @@ nav > ul > li > a {
 }
 
 #work {
-  background-color: #ffffff;
+  background-color: #fff;
 }
-
 
 #work h2 {
   text-align: center;
-  padding: 0px 0px 25px 0px;
+  padding: 0 0 25px;
   border-bottom: 4px solid #f2f2f2;
 }
-
 
 #work .row,
 #work .row::after {
@@ -317,7 +326,7 @@ nav > ul > li > a {
 
 #about h2 {
   text-align: center;
-  padding: 0px 0px 25px 0px;
+  padding: 0 0 25px;
   border-bottom: 4px solid #f2f2f2;
   font-size: 1.65em;
 }
@@ -339,15 +348,16 @@ nav > ul > li > a {
   content: "";
   clear: both;
   display: table;
-  width:100%;
+  width: 100%;
 }
 
 #project h1 {
-    text-align: center;
+  text-align: center;
 }
+
 #project h2 {
   text-align: center;
-  padding: 0px 0px 25px 0px;
+  padding: 0 0 25px;
   border-bottom: 4px solid #f2f2f2;
 }
 
@@ -357,12 +367,13 @@ nav > ul > li > a {
   font-weight: 600;
 }
 
-/* will work on making this more responsive when continuing with javascript */
 .adobe-xd-prototype {
+  display:block;
   border-radius: 15px;
-  width:100%;
-  max-width: 375px;
-  height: calc(100vw / (375 / 812));
+  border-style: none;
+  width: 226px;
+  height: 490px;
+  margin: 30px auto;
 }
 
 .berlin-illustration {
@@ -372,23 +383,22 @@ nav > ul > li > a {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
 }
 
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
 
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-  text-align: unset;
-  padding: 20px 0 13px;
+    text-align: unset;
+    padding: 20px 0 13px;
   }
 
   nav {
@@ -418,7 +428,7 @@ Medium devices (640px and larger)
   }
 
   .footer-md-lg-scrns {
-    display:block;
+    display: block;
   }
 
   .navtoggle li:not(:last-child) {
@@ -435,6 +445,26 @@ Medium devices (640px and larger)
 
   #hero span {
     display: block;
+  }
+
+  #project img {
+    width: 70%;
+  }
+
+  #project .prototype {
+    width: 40%;
+  }
+
+  #project .refinement {
+    width: 50%;
+  }
+
+  #project .row,
+  #project .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
   }
 
   .logo {
@@ -458,6 +488,22 @@ Medium devices (640px and larger)
     padding: 30px;
   }
 
+  .adobe-xd-prototype {
+    display:block;
+    border-radius: 15px;
+    border-style: none;
+    width: 300px;
+    height: 649px;
+    margin: 30px auto;
+  }
+}
+
+.container {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
 
 /* ==============================
@@ -473,9 +519,18 @@ Large devices (1024px or larger)
   }
 
   .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .adobe-xd-prototype {
+    display:block;
+    border-radius: 15px;
+    border-style: none;
+    width: 375px;
+    height: 812px;
+    margin: 30px auto;
   }
 }
 
@@ -483,4 +538,5 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+  /* Nothing for now */
 }

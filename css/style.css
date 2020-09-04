@@ -26,6 +26,7 @@ header {
   -webkit-box-shadow: 0 2px 10px 0 rgba(50, 50, 50, 0.5);
   -moz-box-shadow: 0 2px 10px 0 rgba(50, 50, 50, 0.5);
   box-shadow: 0 2px 10px 0 rgba(50, 50, 50, 0.5);
+  z-index: 1;
 }
 
 header a:link,
@@ -128,12 +129,14 @@ a:active {
 
 .button:hover {
   opacity: 0.9;
+  color: #fff;
   text-decoration: none;
   transition: 0.04s border;
 }
 
 .button:active {
   border-top: 4px solid #fff;
+  color: #fff;
   border-bottom: 4px solid #474747;
   opacity: 1;
 }
@@ -178,7 +181,7 @@ a:active {
   margin: 30px 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: -1; /* prevent it from hovering over the header */
+  z-index: 0; /* prevent it from hovering over the header */
 }
 
 .button.download:hover {
@@ -270,7 +273,7 @@ nav > ul > li > a {
 }
 
 .img.center {
-  display:block;
+  display: block;
   margin: 0 auto;
 }
 
@@ -368,7 +371,7 @@ nav > ul > li > a {
 }
 
 .adobe-xd-prototype {
-  display:block;
+  display: block;
   border-radius: 15px;
   border-style: none;
   width: 226px;
@@ -465,11 +468,9 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
     table-layout: fixed;
-    border-collapse: collapse;;
+    border-collapse: collapse;
     width: 100%;
   }
-
-
 
   .logo {
     max-width: 200px;
@@ -493,7 +494,7 @@ Medium devices (640px and larger)
   }
 
   .adobe-xd-prototype {
-    display:block;
+    display: block;
     border-radius: 15px;
     border-style: none;
     width: 300px;
@@ -521,7 +522,7 @@ Large devices (1024px or larger)
   }
 
   .adobe-xd-prototype {
-    display:block;
+    display: block;
     border-radius: 15px;
     border-style: none;
     width: 375px;
